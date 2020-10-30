@@ -30,10 +30,13 @@
 .list-group .selected:before,
 .list-tree .selected:before {
 	height: @height__list-item;
-	background: @tree-view-background-color--blurred;
+	background: @tree-view-background-color-highlight;
+}
 
-	.tree-view:focus & {
-		background: @tree-view-background-color--active;
+// Don’t display git status on project root
+.list-item.project-root-header {
+	&:after {
+		display: none;
 	}
 }
 
@@ -119,6 +122,11 @@
 	content: "▶" !important;
 	font-size: @font-size-small !important;
 	transform: rotate(90deg) translate(1px, 2px);
+}
+
+// Display collapse/expand arrow in the ignored color
+.list-nested-item.status-ignored .list-item:before {
+	color: @text-color-ignored !important;
 }
 
 // Folder is closed
