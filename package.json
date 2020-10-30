@@ -1,8 +1,8 @@
 {
-  "name": "native-ui",
+  "name": "native-catalina-ui",
   "theme": "ui",
   "version": "0.26.3",
-  "description": "Experience better coding in macOS High Sierra.",
+  "description": "Experience better coding in macOS with some tweaks for Catalina.",
   "main": "lib/main",
   "keywords": [
     "sierra",
@@ -13,7 +13,7 @@
     "macosx",
     "sanfrancisco"
   ],
-  "repository": "https://github.com/fv0/native-ui.git",
+  "repository": "https://github.com/esmukherjee/native-catalina-ui",
   "engines": {
     "atom": ">= 1.27"
   },
